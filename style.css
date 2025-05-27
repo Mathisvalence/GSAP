@@ -20,8 +20,16 @@ html{
 
 }
 
-p{  display: block;
-  overflow: hidden;}
+p{  
+  
+  font-size :25px ;
+  line-height: 25px;
+  display: block;
+  overflow: hidden;
+  width: 1000px;;
+
+
+}
 
 div{
     display: block;

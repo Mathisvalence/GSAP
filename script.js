@@ -23,21 +23,25 @@ let split = SplitText.create(".split", {
       rotate:15,
       stagger: 0.06,
       ease: slideEase,
-      duration: 0.5,
+      duration: 1,
     
     });
   }
 });
 let split2 = SplitText.create(".split2", {
 
-  type: "liness",
+ type: "words, lines", // only split into words and lines (not characters)
+ type: "words, lines", // only split into words and lines (not characters)
+  mask: "lines", // adds extra wrapper element around lines with overflow: clip (v3.13.0+) // adds extra wrapper element around lines with overflow: clip (v3.13.0+)
   
   autoSplit: true,
   onSplit: (self) => {
-    return gsap.from(self.lines, {
-      y: 50,
+    return gsap.from(self.words, {
+      y: 30,
+      rotate:5,
       opacity: 0,
-      stagger: 0.002,
+      stagger: 0.02,
+      
       ease: slideEase,
         
       
