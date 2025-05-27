@@ -1,7 +1,7 @@
 
  
  
- 
+
  
  // use a script tag or an external JS file
  document.addEventListener("DOMContentLoaded", (event) => {
@@ -9,6 +9,8 @@
   // gsap code here!
 
 
+
+const slideEase = "cubic-bezier(0.65,0.05,0.36,1)";
 let split = SplitText.create(".split", {
 
   type: "words",
@@ -18,20 +20,25 @@ let split = SplitText.create(".split", {
     return gsap.from(self.words, {
       y: 70,
       opacity: 0,
-      stagger: 0.05
+      stagger: 0.05,
+
+      duration: 1,
+    
     });
   }
 });
 let split2 = SplitText.create(".split2", {
 
-  type: "words",
+  type: "liness",
   
   autoSplit: true,
   onSplit: (self) => {
-    return gsap.from(self.words, {
+    return gsap.from(self.lines, {
       y: 50,
       opacity: 0,
       stagger: 0.002,
+      ease: slideEase,
+        
       
     });
   }
