@@ -37,10 +37,16 @@ let split2 = SplitText.create(".split2", {
   autoSplit: true,
   onSplit: (self) => {
     return gsap.from(self.words, {
+
+
+
+
+
+
       y: 30,
       rotate:5,
       opacity: 0,
-      stagger: 0.02,
+      stagger: 0.01,
       
       ease: slideEase,
         
