@@ -1,5 +1,18 @@
 .titre{
     
     font-size: 80px;
+
+    padding: 0px;
+    margin: 0px;
     
+}
+
+html{
+    color: white;
+    background-color: black;
+     font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
 }
