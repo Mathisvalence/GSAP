@@ -10,7 +10,21 @@
   height: 80px;
 }
 
+body{
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.container{
+
+}
 html{
+  
     color: white;
     background-color: black;
      font-family: "Space Grotesk", sans-serif;
