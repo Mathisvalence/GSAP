@@ -20,9 +20,10 @@ let split = SplitText.create(".split", {
     return gsap.from(self.words, {
       y: 70,
       opacity: 0,
-      stagger: 0.05,
-
-      duration: 1,
+      rotate:15,
+      stagger: 0.06,
+      ease: slideEase,
+      duration: 0.5,
     
     });
   }
