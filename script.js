@@ -9,7 +9,36 @@
   // gsap code here!
 
 
-gsap.to(".titre", { duration: 2, x: 300 });
+let split = SplitText.create(".split", {
+
+  type: "words",
+  
+  autoSplit: true,
+  onSplit: (self) => {
+    return gsap.from(self.words, {
+      y: 50,
+      opacity: 0,
+      stagger: 0.05
+    });
+  }
+});
+let split2 = SplitText.create(".split2", {
+
+  type: "words",
+  
+  autoSplit: true,
+  onSplit: (self) => {
+    return gsap.from(self.words, {
+      y: 30,
+      opacity: 0,
+      stagger: 0.003,
+      
+    });
+  }
+});
+
 
 
  });
+
+ 
