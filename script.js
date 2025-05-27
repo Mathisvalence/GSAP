@@ -20,8 +20,8 @@
 const slideEase = "cubic-bezier(0.65,0.05,0.36,1)";
 
 
-
-let split = SplitText.create(".split", {
+gsap.utils.toArray(".split").forEach((el) => {
+let split = SplitText.create(el, {
 
   type: "words",
   
@@ -38,7 +38,7 @@ let split = SplitText.create(".split", {
 
         scrollTrigger: {
          scrub: 1,
-        trigger: ".split",
+        trigger: el,
         start: "top 80%",
         end: "top 40%", // Quand le haut de l'élément atteint 80% de la fenêtre
         toggleActions: "play none none reverse", // jouer à l'entrée, rien à la sortie
@@ -47,6 +47,7 @@ let split = SplitText.create(".split", {
 
     });
   }
+});
 });
 
 

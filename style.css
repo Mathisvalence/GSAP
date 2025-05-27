@@ -11,7 +11,7 @@
 }
 
 body{
-  height: 200vh;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,9 +20,19 @@ body{
   
 }
 
-.container{
-
+.titre-clé{
+  padding-top: 100px;
+  
+ 
 }
+
+.container{
+  padding-top: 100vh;
+  padding-bottom: 100vh;
+}
+
+
+
 html{
   
     color: white;
