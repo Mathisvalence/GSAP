@@ -16,7 +16,7 @@ let split = SplitText.create(".split", {
   autoSplit: true,
   onSplit: (self) => {
     return gsap.from(self.words, {
-      y: 50,
+      y: 70,
       opacity: 0,
       stagger: 0.05
     });
@@ -29,9 +29,9 @@ let split2 = SplitText.create(".split2", {
   autoSplit: true,
   onSplit: (self) => {
     return gsap.from(self.words, {
-      y: 30,
+      y: 50,
       opacity: 0,
-      stagger: 0.003,
+      stagger: 0.002,
       
     });
   }
