@@ -55,7 +55,7 @@ p{
 
 }
 
-div{
+.divContent{
     display: block;
   overflow: hidden;
 }

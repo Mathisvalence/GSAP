@@ -4,6 +4,7 @@
 
  
  // use a script tag or an external JS file
+    
 
 
 
@@ -15,7 +16,11 @@
 
   // gsap code here
 
-
+ScrollSmoother.create({
+  smooth:2, // how long (in seconds) it takes to "catch up" to the native scroll position
+  effects: true, // looks for data-speed and data-lag attributes on elements
+  smoothTouch: 0.01, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+});
 
 const slideEase = "cubic-bezier(0.65,0.05,0.36,1)";
 
@@ -63,7 +68,7 @@ let split2 = SplitText.create(".split2", {
   autoSplit: true,
   onSplit: (self) => {
     return gsap.from(self.words, {
-      y: 30,
+      y: -30,
       rotate:5,
       opacity: 0,
       stagger: 0.01,
