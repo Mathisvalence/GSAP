@@ -37,9 +37,9 @@ let split = SplitText.create(el, {
       
 
         scrollTrigger: {
-         scrub: 1,
+         scrub:1,
         trigger: el,
-        start: "top 80%",
+        start: "top 70%",
         end: "top 40%", // Quand le haut de l'élément atteint 80% de la fenêtre
         toggleActions: "play none none reverse", // jouer à l'entrée, rien à la sortie
          markers: true
@@ -74,7 +74,7 @@ let split2 = SplitText.create(".split2", {
          scrub: 1,
         trigger: ".split2",
          // Quand le haut de l'élément atteint 80% de la fenêtre
-        start: "top 80%",
+        start: "top 70%",
         end: "top 40%",
         toggleActions: "play none none reverse", // jouer à l'entrée, rien à la sortie
          markers: true
