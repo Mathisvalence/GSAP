@@ -69,7 +69,7 @@ let split2 = SplitText.create(".split2", {
   onSplit: (self) => {
     return gsap.from(self.words, {
       y: -30,
-      rotate:5,
+      rotate:3,
       opacity: 0,
       stagger: 0.01,
        ease: slideEase,
